@@ -97,3 +97,15 @@ jobs:
       run: |
         pip3 install cryptography
         pylyzer -c "import cryptography" || true
+    - name: numpy
+      run: |
+        pip3 install numpy
+        pylyzer -c "import numpy" || true
+    - name: httpx
+      run: |
+        pip3 install httpx
+        pylyzer -c "import httpx" || true
+    - name: pytest
+      run: |
+        pip3 install pytest
+        pylyzer -c "import pytest" || true
